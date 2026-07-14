@@ -1,0 +1,6 @@
+{
+  "name": "Modern Physics Linked List Simulator",
+  "description": "An interactive laboratory simulator that models radioactive decay chains, Bohr electron cascades, and bubble chamber particle tracking using linked list operations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

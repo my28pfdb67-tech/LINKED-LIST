@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-950: #0a0c0e;
+  --color-slate-900: #0d1012;
+  --color-slate-850: #15181b;
+  --color-slate-800: #1a1c1e;
+  --color-slate-750: #24292e;
+  --color-slate-700: #2b3137;
+  --color-slate-600: #444c56;
+  --color-slate-500: #64748b;
+  --color-slate-400: #94a3b8;
+  --color-slate-300: #cbd5e1;
+  --color-slate-200: #e2e8f0;
+  --color-slate-100: #f8fafc;
+
+  --color-indigo-950: #080a0c;
+  --color-indigo-900: #0d1012;
+  --color-indigo-850: #15181b;
+  --color-indigo-800: #1a1c1e;
+  --color-indigo-700: #22d3ee;
+  --color-indigo-600: #0891b2;
+  --color-indigo-500: #06b6d4;
+  --color-indigo-400: #22d3ee;
+  --color-indigo-300: #67e8f9;
+  
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+/* Custom glow effects and scrollbar rules to align with the Elegant Dark Theme */
+@layer base {
+  body {
+    background-color: #0a0c0e;
+    color: #cbd5e1;
+    font-family: var(--font-sans);
+  }
+
+  /* Beautiful high-tech terminal scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080a0c;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1a1c1e;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4;
+  }
+}
+
+/* Elegant Tech Grid Background overlay */
+.tech-grid-bg {
+  background-image: radial-gradient(#1e293b 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+}
+
+.glow-cyan-border {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.1), inset 0 0 15px rgba(6, 182, 212, 0.05);
+}
